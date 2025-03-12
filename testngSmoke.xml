@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<groups>
+<run>
+<include name="Smoke"></include>
+</run>
+</groups>
+<listeners><listener class-name="Generic_Utility.listenerUtility"></listener>
+</listeners>
+
+  <test  name="Test">
+    <classes>
+      <class name="com.groceryStore_CheckoutTest.PlaceOrderWithPaymentTest"/>
+      <class name="com.groceryStore_SignupTest.SignUpTest"/>
+      <class name="com.groceryStore_addToCartTest.AddProductToCartTest"/>
+      <class name="com.groceryStore_addToCartTest.ModifyProductQtyTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
